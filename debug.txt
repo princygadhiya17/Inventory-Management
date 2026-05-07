@@ -1,0 +1,7 @@
+Array
+(
+    [invoice_id] => 5
+    [paymentdate] => 2025-12-20
+    [payment_method] => Cash
+    [paymentamount] => 100
+)
