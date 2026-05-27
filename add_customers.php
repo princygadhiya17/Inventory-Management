@@ -2,7 +2,6 @@
 include("config.php");
 include("check_session.php");
 ?>
-<!DOCTYPE html>
 <?php
 if (isset($_POST['add'])) {
 
@@ -91,6 +90,8 @@ if (isset($_GET['id'])) {
 }
 
 ?>
+<!DOCTYPE html>
+
 <html lang="en">
 <?php include("header.php"); ?>
 
@@ -143,26 +144,26 @@ if (isset($_GET['id'])) {
                                             <div class="col-md-2 mb-3">
                                                 <label for="username">User Name</label>
                                                 <input type="text" id="username" name="user_name" class="form-control" value="<?php if (isset($_GET['id'])) {
-                                                                                                                                    echo $fetch1['user_name'];
+                                                                                                                                    echo $fetch1['user_name'] ?? '';
                                                                                                                                 } ?>" required>
                                             </div>
                                             <div class="col-md-2 mb-3">
                                                 <label for="phone">Mobile</label>
                                                 <input type="number" id="phone" name="user_mobile" class="form-control" value="<?php if (isset($_GET['id'])) {
-                                                                                                                                    echo $fetch1['user_mobile'];
+                                                                                                                                    echo $fetch1['user_mobile'] ?? '';
                                                                                                                                 } ?>" required pattern="^(\d{10}|\d{12})$"
                                                     maxlength="12">
                                             </div>
                                             <div class="col-md-3 mb-3">
                                                 <label for="email">Email</label>
                                                 <input type="email" id="email" name="email" class="form-control" required value="<?php if (isset($_GET['id'])) {
-                                                                                                                                        echo $fetch1['email'];
+                                                                                                                                        echo $fetch1['email'] ?? '';
                                                                                                                                     } ?>">
                                             </div>
                                             <div class="col-md-3 mb-6">
                                                 <label for="password">Password</label>
                                                 <input type="password" id="password" name="password" class="form-control" value="<?php if (isset($_GET['id'])) {
-                                                                                                                                        echo $fetch1['password'];
+                                                                                                                                        echo $fetch1['password'] ?? '';
                                                                                                                                     } ?>" required minlength="6">
                                             </div>
                                         </div>
@@ -170,13 +171,13 @@ if (isset($_GET['id'])) {
                                             <div class="col-md-6 mb-3">
                                                 <label for="billingaddress">Billing Address</label>
                                                 <textarea class="form-control" name="billing_address" id="billing_address" rows="5" required><?php if (isset($_GET['id'])) {
-                                                                                                                                                    echo $fetch1['billing_address'];
+                                                                                                                                                    echo $fetch1['billing_address'] ?? '';
                                                                                                                                                 } ?></textarea>
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <label for="shippingaddress">Shipping Address</label>
                                                 <textarea class="form-control" name="shipping_address" id="shipping_address" rows="5" required><?php if (isset($_GET['id'])) {
-                                                                                                                                                    echo $fetch1['shipping_address'];
+                                                                                                                                                    echo $fetch1['shipping_address'] ?? '';
                                                                                                                                                 } ?></textarea>
                                             </div>
                                             <div class="col-12 mt-3 mb-3 text-right">
