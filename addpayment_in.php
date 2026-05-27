@@ -1,10 +1,10 @@
-    <?php
-    include("config.php");
-    include("check_session.php");
+<?php
+include("config.php");
+include("check_session.php");
     // $id = $_GET['id'];
     // $query = mysqli_query($conn, "select i.*,sum(paid_amount) as paid_amount from invoice where id=$id");
 
-    ?>
+?>
 
     <!DOCTYPE html>
 
@@ -57,8 +57,7 @@
                                                             <?php
                                                             $user_q = mysqli_query($conn, "SELECT id,user_name FROM users where user_type='Customer'");
                                                             while ($b = mysqli_fetch_assoc($user_q)) {
-                                                                $selected = (isset($_GET['id']) && $fetch1['user_id'] == $b['id']) ? 'selected' : '';
-                                                            ?>
+                                                                $selected = (isset($fetch1['user_id']) && $fetch1['user_id'] == $b['id']) ? 'selected' : '';                                                            ?>
                                                                 <option value="<?php echo $b['id']; ?>" <?php echo $selected; ?>>
                                                                     <?php echo $b['user_name']; ?>
                                                                 </option>
