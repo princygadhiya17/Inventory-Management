@@ -63,7 +63,7 @@ if (isset($_POST['add'])) {
         }
 
         $sql = "INSERT INTO brands (logo, name, created_at, updated_at)
-VALUES ('$file_name', '$name', '$now', '$now')";
+        VALUES ('$file_name', '$name', '$now', '$now')";
         $msg = 'Created';
     }
 
