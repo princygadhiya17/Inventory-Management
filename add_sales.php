@@ -1,9 +1,8 @@
-    <?php
-    include("config.php");
-    include("check_session.php");
+<?php
+include("config.php");
+include("check_session.php");
 
-
-    $invoice_items = [];
+$invoice_items = [];
     $fetch1 = [];
     $q2 = mysqli_query($conn, "SELECT * FROM invoice_details WHERE 1=0");
 
