@@ -1,6 +1,6 @@
-    <?php
-    include("config.php");
-    include("check_session.php");
+<?php
+include("config.php");
+include("check_session.php");
 
 
     $invoice_items = [];
@@ -19,7 +19,7 @@
         $invoice_items = [];
         $q2 = mysqli_query($conn, "SELECT * FROM invoice_details WHERE invoice_id='$invoice_id'");
     }
-    ?>
+?>
 
     <!DOCTYPE html>
 
