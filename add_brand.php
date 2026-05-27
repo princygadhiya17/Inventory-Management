@@ -5,9 +5,9 @@ include("check_session.php");
 <!DOCTYPE html>
 <?php
 if (isset($_POST['add'])) {
+    $now = date('Y-m-d H:i:s');
 
     $name = $_POST['name'];
-
     $target_dir = "upload/brand/";
     $file_name = basename($_FILES["logo"]["name"]);
     $target_file = $target_dir . $file_name;
@@ -62,8 +62,8 @@ if (isset($_POST['add'])) {
             exit();
         }
 
-        $sql = "INSERT INTO brands(logo,name)
-                   values('$file_name','$name')";
+        $sql = "INSERT INTO brands (logo, name, created_at, updated_at)
+VALUES ('$file_name', '$name', '$now', '$now')";
         $msg = 'Created';
     }
 
@@ -135,7 +135,7 @@ if (isset($_GET['id'])) {
                                             <div class="col-md-6 mb-3">
                                                 <label for="brandname">Brand Name</label>
                                                 <input type="text" id="brandname" name="name" class="form-control" value="<?php if (isset($_GET['id'])) {
-                                                                                                                                echo $fetch1['name'];
+                                                                                                                                echo $fetch1['name'] ?? '';
                                                                                                                             } ?>" required>
                                             </div>
 
