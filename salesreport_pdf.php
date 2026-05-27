@@ -1,7 +1,7 @@
 <?php
 include("config.php");
 // Include autoloader 
-require_once 'dompdf\autoload.inc.php';
+require_once 'dompdf/autoload.inc.php';
 
 // Reference the Dompdf namespace 
 use Dompdf\Dompdf;
