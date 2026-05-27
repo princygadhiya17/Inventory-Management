@@ -1,9 +1,6 @@
 <?php
 include("config.php");
-// Include autoloader 
-require_once 'dompdf/autoload.inc.php';
-
-// Reference the Dompdf namespace 
+require_once 'vendor/autoload.php';
 use Dompdf\Dompdf;
 
 // Instantiate and use the dompdf class 
