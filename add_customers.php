@@ -1,8 +1,7 @@
 <?php
 include("config.php");
 include("check_session.php");
-?>
-<?php
+
 if (isset($_POST['add'])) {
 
     $user_name = $_POST['user_name'];
@@ -88,7 +87,6 @@ if (isset($_GET['id'])) {
     $exec1 = mysqli_query($conn, $query1);
     $fetch1 = mysqli_fetch_assoc($exec1);
 }
-
 ?>
 <!DOCTYPE html>
 
