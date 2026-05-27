@@ -72,6 +72,7 @@ if (isset($_POST['add'])) {
         exit();
     }
 }
+
 if (isset($_GET['id'])) {
 
     $id = $_GET['id'];
@@ -80,6 +81,7 @@ if (isset($_GET['id'])) {
     $fetch1 = mysqli_fetch_assoc($exec1);
 }
 ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
