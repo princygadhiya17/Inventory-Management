@@ -162,7 +162,7 @@ include("check_session.php");
                                                     <div class="input-group">
                                                         <span class="input-group-text">₹</span>
                                                         <input type="number" step="0.01" class="form-control" name="paid_amount" id="paid_amount" placeholder="Enter Paid Amount" value="<?php if (isset($_GET['id'])) {
-                                                                                                                                                                                                echo $fetch1['paid_amount'];
+                                                                                                                                                                                                echo $fetch1['paid_amount'] ?? '';
                                                                                                                                                                                             } ?>" required>
                                                     </div>
                                                 </div>
