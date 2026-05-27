@@ -31,7 +31,6 @@ if ($from_date && $to_date) {
 $invoices = mysqli_query($conn, $query);
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <?php include("header.php"); ?>
