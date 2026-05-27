@@ -1,9 +1,8 @@
-    <?php
-    include("config.php");
-    include("check_session.php");
-    ?>
-
-    <!DOCTYPE html>
+<?php
+include("config.php");
+include("check_session.php");
+?>
+<!DOCTYPE html>
 
     <html>
     <?php include("header.php"); ?>
