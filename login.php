@@ -465,7 +465,6 @@
 
       </form>
 
-      <div class="or-row">or continue with</div>
     </div>
 
   </div>
