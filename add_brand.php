@@ -2,7 +2,6 @@
 include("config.php");
 include("check_session.php");
 ?>
-<!DOCTYPE html>
 <?php
 if (isset($_POST['add'])) {
     $now = date('Y-m-d H:i:s');
@@ -83,6 +82,8 @@ if (isset($_GET['id'])) {
 }
 
 ?>
+<!DOCTYPE html>
+
 <html lang="en">
 <?php include("header.php"); ?>
 
