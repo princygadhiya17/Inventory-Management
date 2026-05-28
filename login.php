@@ -441,7 +441,7 @@
           <label for="email">Email address</label>
           <div class="input-wrap">
             <i class="fas fa-user left-icon"></i>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            <input type="email" id="email" name="email" placeholder="admin@gmail.com" required />
           </div>
         </div>
 
@@ -449,7 +449,7 @@
           <label for="password">Password</label>
           <div class="input-wrap">
             <i class="fas fa-lock left-icon"></i>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            <input type="password" id="password" name="password" placeholder="123456" required />
             <i class="fas fa-eye eye-toggle" id="togglePw"></i>
           </div>
         </div>
